@@ -57,11 +57,11 @@ The .data file should be as mentioned below
 The first line gives you the size of the array that is passed, the second line is the value of the return value. This was a school project and the third line was used to represent the number of points that was allocated for this test case. 
 When we need to pass an array to the function the .p1 and .data files are as shown below. 
 
-.p1 File:
+`.p1 File` :
 
     (+ arg_size (aref arg_array 0))
 
-.data File:
+`.data File` :
   
        1              // array size, the variable `arg_size` is used to refer to this value
        20             // The array that is passed as an argument. Seperate the elements using a space. The name `arg_array` is the name of this array 
