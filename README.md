@@ -26,12 +26,51 @@ Apart from the function names mentioned in the table, the scanner picks up numbe
 
 The language is extremely limited and the programming using the given language would rise to very few exceptions. These are trapped and an error message is printed before aborting the program. Run time execution errors like divide by zero, seg faults are allowed to rise an exception when the program runs. 
 
-## Creating a test file
-
-Based on the rules given in the above section create a test file with the extension ".p1". 
-
-
 ## How the main program functions :
 
 A starter code was provided which dumps the generated function into a module with the name of the test file and the module has two arguments an array and its size. 
-The C++ representation of the function 
+The C++ representation of the function using the rules mentioned above is as follows
+  
+  int p1_program(int arg_size, int *arg_array)
+  {
+     // do something
+    return 0;
+  }
+
+The return value is the result of the last function that is executed by the program. 
+
+
+## Creating a test file
+
+Based on the rules given in the above section create a test file with the extension ".p1". You should also create a data file with which the generate is going to compare the output with. 
+
+Consider the following .p1 file
+    
+      (+ 1 2 3)
+      
+The .data file should be as mentioned below 
+
+      0
+      6
+      1
+      
+The first line gives you the size of the array that is passed, the second line is the value of the return value. This was a school project and the third line was used to represent the number of points that was allocated for this test case. 
+When we need to pass an array to the function the .p1 and .data files are as shown below. 
+
+.p1 File:
+
+  (+ arg_size (aref arg_array 0))
+
+.data File:
+  
+  1              // array size, the variable `arg_size` is used to refer to this value
+  20             // The array that is passed as an argument. Seperate the elements using a space. The name `arg_array` is the name of this array 
+  21             // The value returned by the function 
+  20             // `arg_array` at the end of execution
+  3              // Points alloted for this test case
+  
+The explantion of the .data file is represented as comments above don't include them while creating the file.
+
+
+
+
