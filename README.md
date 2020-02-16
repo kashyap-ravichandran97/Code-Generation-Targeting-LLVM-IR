@@ -63,11 +63,11 @@ When we need to pass an array to the function the .p1 and .data files are as sho
 
 .data File:
   
-  1              // array size, the variable `arg_size` is used to refer to this value
-  20             // The array that is passed as an argument. Seperate the elements using a space. The name `arg_array` is the name of this array 
-  21             // The value returned by the function 
-  20             // `arg_array` at the end of execution
-  3              // Points alloted for this test case
+       1              // array size, the variable `arg_size` is used to refer to this value
+       20             // The array that is passed as an argument. Seperate the elements using a space. The name `arg_array` is the name of this array 
+       21             // The value returned by the function 
+       20             // `arg_array` at the end of execution
+       3              // Points alloted for this test case
   
 The explantion of the .data file is represented as comments above don't include them while creating the file.
 
