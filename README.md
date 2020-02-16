@@ -1,4 +1,4 @@
-# Code-Generation-Targeting-LLVM-IR
+# Code Generation Targeting LLVM IR
 
 A Lisp Based Programming Language is compiled and is represented using LLVM IR. I have used Bison and Lex to parse and scan the file respectively. 
 
@@ -59,7 +59,7 @@ When we need to pass an array to the function the .p1 and .data files are as sho
 
 .p1 File:
 
-  (+ arg_size (aref arg_array 0))
+    (+ arg_size (aref arg_array 0))
 
 .data File:
   
