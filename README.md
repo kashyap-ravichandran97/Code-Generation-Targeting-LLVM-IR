@@ -1,6 +1,6 @@
 # Code Generation Targeting LLVM IR
 
-A Lisp Based Programming Language is compiled and is represented using LLVM IR. I have used Bison and Lex to parse and scan the file respectively. 
+A Lisp Based Programming Language is compiled and is represented using LLVM IR. I have used Bison and Flex to parse and scan the file respectively. 
 
 ## Programming Rules 
 
@@ -81,3 +81,6 @@ The explantion of the .data file is represented as comments above don't include 
 
 If you run `make test` instead of `make` inside the tests folder the console would give you the percentage of the test case that is successful and a summary of the output if there were any errors .  
 
+## Important 
+
+You need to have clang, Flex, Bison and other dependencies mentioned in the makefile to run the code.  
